@@ -59,7 +59,12 @@
           args:
           let
             defaultArgs = {
+              pname = "architest";
               src = ./.;
+
+              postInstall = ''
+                mv $out/bin/architest-cli $out/bin/architest
+              '';
 
               cargoTestCommands =
                 prev:

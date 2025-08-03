@@ -1,6 +1,9 @@
-[package]
-name = "architest"
-version = "0.1.0"
-edition = "2024"
+[workspace]
 
-[dependencies]
+resolver = "2"
+
+members = [
+  "core",
+  "cli"
+]
+
